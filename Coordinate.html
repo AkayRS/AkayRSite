@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Menu.css">
     <title>Coordinate</title>
 </head>
 <body>
@@ -13,6 +14,29 @@
             <img src="Logo Sito.png" width="200px" height="200px">
         </div>
     </a>
+
+    <div class="menu">
+
+        <div class="menu-icon">
+            <a href="" class="menu-icon-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>    
+    </div>
+
+    <div class="espansione mostra">
+        <div class="categoria">
+            <a href="Coordinate.html">Coordinate del Mondo</a>
+        </div>
+
+        <div class="categoria">
+            <a href="Lista Giocatori.html">Lista Giocatori</a>
+        </div>
+        
+
+    </div>
     
 
 
@@ -87,5 +111,17 @@
         </div>
 
     </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".menu-icon-bar").click(function(e){
+                $(".espansione").toggleClass('mostra');
+                e.preventDefault();
+            });
+        });
+    </script>
 </body>
 </html>
