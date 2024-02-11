@@ -4,55 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="Menu.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
-    <title>MEDCA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>AkayRSite</title>
 </head>
 <body>
-
-    <a href="index.html">
-        <div class="contenitore-logo">
-            <img src="Logo Sito.png" width="200px" height="200px">
-        </div>
-    </a>
-
-    <div class="menu">
-
-        <div class="menu-icon">
-            <a href="" class="menu-icon-bar">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-        </div>    
-    </div>
-
-    <div class="espansione mostra">
-        <div class="categoria">
-            <a href="Minecraft.html">Minecraft</a>
-        </div>
-
-        
-        
-
-    </div>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <div class="icon-menu" id="pulsante-menu" >
+        
+            <span></span>
+            <span></span>
+            <span></span>
+        
+        
+      </div>
+      <div class="espansione mostra">
+
+        <div class="categoria">
+            <a href="index.html">Home</a>
+        </div>
+        
+        <div class="categoria">
+            <a href="">Romantico</a>
+        </div>
+        <div class="categoria">
+            <a href="">Horror</a>
+        </div>
+        <div class="categoria">
+            <a href="">Azione</a>
+        </div>
+        
+      </div>
+
+
+    <div class="titolo-pagina">
+        <h1>AkayRSite</h1>
+    </div>
+    <div class="contenitore-presentazione">
+
+        <a href="Kanojo mo Kanojo.html">
+            <div class="item">
+                <img class="immagine-item-presentazione" src="https://cdn.animesaturn.tv/static/images/locandine/6eFmJ.jpg" alt="">
+                <h1 class="titolo-item-presentazione">Kanojo no Kanojo</h1>
+            </div>
+        </a>
+        
+        <a href="The Eminence in Shadow.html">
+            <div class="item">
+                <img class="immagine-item-presentazione" src="https://www.animeclick.it/immagini/anime/Kage_no_Jitsuryokusha_ni_Naritakute/cover/Kage_no_Jitsuryokusha_ni_Naritakute-cover.jpg" alt="">
+                <h1 class="titolo-item-presentazione">The Eminence in Shadow</h1>
+            </div>
+        </a>
+        
+        <a href="Dark Gathering.html">
+            <div class="item">
+                <img class="immagine-item-presentazione" src="https://img.animeworld.so/locandine/qbtsF.png" alt="">
+                <h1 class="titolo-item-presentazione">Dark Gathering</h1>
+            </div>
+    
+        </a>
+        
+
+        <a href="Rent a Girlfriend.html">
+            <div class="item">
+                <img class="immagine-item-presentazione" src="https://img.animeworld.tv/locandine/247715.jpg" alt="">
+                <h1 class="titolo-item-presentazione">Rent a Girlfriend</h1>
+            </div>
+        </a>
+        
+        <a href="Frieren - Oltre la fine del viaggio.html">
+            <div class="item">
+                <img class="immagine-item-presentazione" src="https://img.animeworld.so/locandine/kbcPv.jpg" alt="">
+                <h1 class="titolo-item-presentazione">Frieren - Oltre la fine del viaggio</h1>
+            </div>
+        </a>
+        
+        <a href="Classroom of the Elite.html">
+            <div class="item">
+                <img class="immagine-item-presentazione" src="https://cdn.animesaturn.tv/static/images/locandine/86829l.jpg" alt="">
+                <h1 class="titolo-item-presentazione">Classroom of the Elite</h1>
+            </div>
+        </a>
+
+        <a href="Spy x Family.html">
+            <div class="item">
+                <img class="immagine-item-presentazione" src="https://cdn.animesaturn.tv/static/images/locandine/Uamqh.png" alt="">
+                <h1 class="titolo-item-presentazione">Spy x Family</h1>
+            </div>
+        </a>
+
+        <a href="Mushoku Tensei.html">
+            <div class="item">
+                <img class="immagine-item-presentazione" src="https://img.animeworld.so/locandine/FwbNc.jpg" alt="">
+                <h1 class="titolo-item-presentazione">Mushoku Tensei</h1>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="item">
+                <img class="immagine-item-presentazione" src="https://cdn-us.anidb.net/images/main/274564.jpg" alt="">
+                <h1 class="titolo-item-presentazione">Classroom of the Elite</h1>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="item">
+                <img class="immagine-item-presentazione" src="https://cdn-us.anidb.net/images/main/274564.jpg" alt="">
+                <h1 class="titolo-item-presentazione">Classroom of the Elite</h1>
+            </div>
+        </a>
+        
+
+        
+        
+    </div>
+
     <script>
-        $(document).ready(function(){
-            $(".menu-icon-bar").click(function(e){
-                $(".espansione").toggleClass('mostra');
-                e.preventDefault();
-            });
+        // Attendi che il documento sia completamente caricato
+        $(document).ready(function() {
+        // Aggiungi un gestore di eventi per il clic sul pulsante con id "myButton"
+        $("#pulsante-menu").click(function() {
+            // Aggiungi la classe "miaClasse" al pulsante al clic
+            $(".espansione").toggleClass("mostra");
+        });
         });
     </script>
-    
-    
-    
-    
-    
-    
-    
-    
 </body>
 </html>

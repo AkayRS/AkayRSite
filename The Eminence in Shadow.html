@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesWiever.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>AkayRSite</title>
+</head>
+<body>
+    <div class="icon-menu" id="pulsante-menu" >
+        
+            <span></span>
+            <span></span>
+            <span></span>
+        
+        
+    </div>
+    <div class="espansione mostra">
+
+        <div class="categoria">
+            <a href="index.html">Home</a>
+        </div>
+
+        <div class="categoria">
+            <a href="">Romantico</a>
+        </div>
+        <div class="categoria">
+            <a href="">Horror</a>
+        </div>
+        <div class="categoria">
+            <a href="">Azione</a>
+        </div>
+        
+    </div>
+
+    <div class="titolo-pagina">
+        <h1>The Eminence in Shadow</h1>
+    </div>
+
+
+    <div class="principale">
+        
+        <iframe  id="myIframe"  allowfullscreen></iframe>
+        
+        <div class="menu-episodi">
+            <button  onclick="changeIframeSrc(1)">1</button>
+            <button  onclick="changeIframeSrc(2)">2</button>
+            <button  onclick="changeIframeSrc(3)">3</button>
+            <button  onclick="changeIframeSrc(4)">4</button>
+            <button  onclick="changeIframeSrc(5)">5</button>
+            <button  onclick="changeIframeSrc(6)">6</button>
+            <button  onclick="changeIframeSrc(7)">7</button>
+            <button  onclick="changeIframeSrc(8)">8</button>
+            <button  onclick="changeIframeSrc(9)">9</button>
+            <button  onclick="changeIframeSrc(10)">10</button>
+            <button  onclick="changeIframeSrc(11)">11</button>
+            <button  onclick="changeIframeSrc(12)">12</button>
+            <button  onclick="changeIframeSrc(13)">13</button>
+            <button  onclick="changeIframeSrc(14)">14</button>
+            <button  onclick="changeIframeSrc(15)">15</button>
+            <button  onclick="changeIframeSrc(16)">16</button>
+            <button  onclick="changeIframeSrc(17)">17</button>
+            <button  onclick="changeIframeSrc(18)">18</button>
+            <button  onclick="changeIframeSrc(19)">19</button>
+            <button  onclick="changeIframeSrc(20)">20</button>
+
+
+        </div>
+    </div>
+
+    <div class="contenitore-presentazione" style="background-color: black;">
+        <a href="The Eminence in Shadow 2.html">
+            <div class="item">
+                <img class="immagine-item-presentazione" src="https://img.animeworld.so/locandine/GKbxVA.jpg" alt="">
+                <h1 class="titolo-item-presentazione">The Eminence in Shadow 2</h1>
+            </div>
+        </a>
+        
+    </div>
+
+
+
+    <script>
+        // Attendi che il documento sia completamente caricato
+        $(document).ready(function() {
+        // Aggiungi un gestore di eventi per il clic sul pulsante con id "myButton"
+        $("#pulsante-menu").click(function() {
+            // Aggiungi la classe "miaClasse" al pulsante al clic
+            $(".espansione").toggleClass("mostra");
+        });
+        });
+
+        
+
+        function changeIframeSrc(numero) {
+            
+            if(numero>9){
+                var primo="https://srv13-hana.vidawave.cc/DDL/ANIME/KageNoJitsuryokushaNiNaritakute/KageNoJitsuryokushaNiNaritakute_Ep_" ;
+            }else{
+                var primo="https://srv13-hana.vidawave.cc/DDL/ANIME/KageNoJitsuryokushaNiNaritakute/KageNoJitsuryokushaNiNaritakute_Ep_0" ;
+            }
+
+            // Definisci la tua variabile con la risorsa desiderata
+                    
+            var secondo="_SUB_ITA.mp4";
+            var terzo=numero;
+
+            // Ottieni l'elemento iframe usando l'ID
+            var myIframe = document.getElementById("myIframe");
+
+            // Assegna il valore della variabile all'attributo src dell'iframe
+            myIframe.src =primo+terzo+secondo ;        
+                    
+                    
+            
+
+        }
+
+        
+    </script>
+</body>
+</html>
